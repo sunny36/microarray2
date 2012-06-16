@@ -34,4 +34,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
- gem 'debugger'
+ gem 'debugger' if RUBY_PLATFORM.include?("x86_64-darwin")
