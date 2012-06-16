@@ -1,0 +1,12 @@
+export PATH ; PATH="/Users/somchok/.rvm/gems/ruby-1.9.3-p194@microarray2/bin:/Users/somchok/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/somchok/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/somchok/.rvm/bin:$PATH"
+export rvm_env_string ; rvm_env_string='ruby-1.9.3-p194@microarray2'
+export rvm_path ; rvm_path='/Users/somchok/.rvm'
+export rvm_ruby_string ; rvm_ruby_string='ruby-1.9.3-p194'
+export rvm_gemset_name ; rvm_gemset_name='microarray2'
+export RUBY_VERSION ; RUBY_VERSION='ruby-1.9.3-p194'
+export GEM_HOME ; GEM_HOME='/Users/somchok/.rvm/gems/ruby-1.9.3-p194@microarray2'
+export GEM_PATH ; GEM_PATH='/Users/somchok/.rvm/gems/ruby-1.9.3-p194@microarray2:/Users/somchok/.rvm/gems/ruby-1.9.3-p194@global'
+export MY_RUBY_HOME ; MY_RUBY_HOME='/Users/somchok/.rvm/rubies/ruby-1.9.3-p194'
+export IRBRC ; IRBRC='/Users/somchok/.rvm/rubies/ruby-1.9.3-p194/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT

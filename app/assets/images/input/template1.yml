@@ -1,0 +1,128 @@
+%YAML:1.0
+fAngleRotInDeg: 0.
+pairRegionRefCircle:
+   pointTL_x: 264
+   pointTL_y: 321
+   pointBR_x: 272
+   pointBR_y: 329
+pairRegionTestCircle:
+   pointTL_x: 319
+   pointTL_y: 344
+   pointBR_x: 327
+   pointBR_y: 351
+iNumRegionRefMarkers: 5
+iNumRefMarkersPerRegion0: 11
+pairRegionRefMarkers0:
+   pointTL_x: 259
+   pointTL_y: 120
+   pointBR_x: 276
+   pointBR_y: 350
+iNumRefMarkersPerRegion1: 2
+pairRegionRefMarkers1:
+   pointTL_x: 362
+   pointTL_y: 113
+   pointBR_x: 376
+   pointBR_y: 141
+iNumRefMarkersPerRegion2: 2
+pairRegionRefMarkers2:
+   pointTL_x: 398
+   pointTL_y: 116
+   pointBR_x: 412
+   pointBR_y: 143
+iNumRefMarkersPerRegion3: 11
+pairRegionRefMarkers3:
+   pointTL_x: 380
+   pointTL_y: 132
+   pointBR_x: 394
+   pointBR_y: 349
+iNumRefMarkersPerRegion4: 11
+pairRegionRefMarkers4:
+   pointTL_x: 494
+   pointTL_y: 134
+   pointBR_x: 516
+   pointBR_y: 350
+iNumRegionTests: 4
+pairDimOfTestsPerRegion0:
+   iNumRows: 5
+   iNumCols: 5
+pairRegionTests0:
+   pointTL_x: 292
+   pointTL_y: 134
+   pointBR_x: 356
+   pointBR_y: 226
+matVecOfRectTests0: !!opencv-matrix
+   rows: 25
+   cols: 4
+   dt: f
+   data: [ 301., 141., 9., 8., 310., 141., 9., 8., 319., 141., 9., 8.,
+       328., 141., 9., 8., 337., 141., 9., 8., 301., 159., 9., 8., 310.,
+       159., 9., 8., 319., 159., 9., 8., 328., 159., 9., 8., 337., 159.,
+       9., 8., 301., 176., 9., 8., 310., 176., 9., 8., 319., 176., 9.,
+       8., 328., 176., 9., 8., 337., 176., 9., 8., 301., 194., 9., 8.,
+       310., 194., 9., 8., 319., 194., 9., 8., 328., 194., 9., 8., 337.,
+       194., 9., 8., 301., 211., 9., 8., 310., 211., 9., 8., 319., 211.,
+       9., 8., 328., 211., 9., 8., 337., 211., 9., 8. ]
+pairDimOfTestsPerRegion1:
+   iNumRows: 6
+   iNumCols: 5
+pairRegionTests1:
+   pointTL_x: 294
+   pointTL_y: 241
+   pointBR_x: 349
+   pointBR_y: 359
+matVecOfRectTests1: !!opencv-matrix
+   rows: 30
+   cols: 4
+   dt: f
+   data: [ 299., 248., 9., 8., 308., 248., 9., 8., 317., 248., 9., 8.,
+       327., 248., 9., 8., 336., 248., 9., 8., 299., 267., 9., 8., 308.,
+       267., 9., 8., 317., 267., 9., 8., 327., 267., 9., 8., 336., 267.,
+       9., 8., 299., 286., 9., 8., 308., 286., 9., 8., 317., 286., 9.,
+       8., 327., 286., 9., 8., 336., 286., 9., 8., 299., 305., 9., 8.,
+       308., 305., 9., 8., 317., 305., 9., 8., 327., 305., 9., 8., 336.,
+       305., 9., 8., 299., 323., 9., 8., 308., 323., 9., 8., 317., 323.,
+       9., 8., 327., 323., 9., 8., 336., 323., 9., 8., 299., 342., 9.,
+       8., 308., 342., 9., 8., 317., 342., 9., 8., 327., 342., 9., 8.,
+       336., 342., 9., 8. ]
+pairDimOfTestsPerRegion2:
+   iNumRows: 5
+   iNumCols: 5
+pairRegionTests2:
+   pointTL_x: 416
+   pointTL_y: 135
+   pointBR_x: 479
+   pointBR_y: 227
+matVecOfRectTests2: !!opencv-matrix
+   rows: 25
+   cols: 4
+   dt: f
+   data: [ 425., 141., 9., 8., 435., 141., 9., 8., 445., 141., 9., 8.,
+       454., 141., 9., 8., 464., 141., 9., 8., 425., 159., 9., 8., 435.,
+       159., 9., 8., 445., 159., 9., 8., 454., 159., 9., 8., 464., 159.,
+       9., 8., 425., 176., 9., 8., 435., 176., 9., 8., 445., 176., 9.,
+       8., 454., 176., 9., 8., 464., 176., 9., 8., 425., 194., 9., 8.,
+       435., 194., 9., 8., 445., 194., 9., 8., 454., 194., 9., 8., 464.,
+       194., 9., 8., 425., 211., 9., 8., 435., 211., 9., 8., 445., 211.,
+       9., 8., 454., 211., 9., 8., 464., 211., 9., 8. ]
+pairDimOfTestsPerRegion3:
+   iNumRows: 6
+   iNumCols: 5
+pairRegionTests3:
+   pointTL_x: 416
+   pointTL_y: 242
+   pointBR_x: 479
+   pointBR_y: 358
+matVecOfRectTests3: !!opencv-matrix
+   rows: 30
+   cols: 4
+   dt: f
+   data: [ 425., 247., 9., 8., 435., 247., 9., 8., 445., 247., 9., 8.,
+       454., 247., 9., 8., 464., 247., 9., 8., 425., 266., 9., 8., 435.,
+       266., 9., 8., 445., 266., 9., 8., 454., 266., 9., 8., 464., 266.,
+       9., 8., 425., 284., 9., 8., 435., 284., 9., 8., 445., 284., 9.,
+       8., 454., 284., 9., 8., 464., 284., 9., 8., 425., 303., 9., 8.,
+       435., 303., 9., 8., 445., 303., 9., 8., 454., 303., 9., 8., 464.,
+       303., 9., 8., 425., 321., 9., 8., 435., 321., 9., 8., 445., 321.,
+       9., 8., 454., 321., 9., 8., 464., 321., 9., 8., 425., 340., 9.,
+       8., 435., 340., 9., 8., 445., 340., 9., 8., 454., 340., 9., 8.,
+       464., 340., 9., 8. ]

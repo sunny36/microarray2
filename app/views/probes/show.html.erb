@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="span8">
+    <div id="<%= @probe.filename.split('.').first %>"></div>
+  </div>
+  <div class="span3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% ['rect_x', 'rect_y', 'mean', 'std_dev', 'max', 'min', 'median'].each do |n| %>
+          <tr id="<%=n%>">
+            <td><%= n.humanize %></td>
+            <td></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="span12">
+    <table id="<%= 'probe' + @probe.id.to_s %>" class="table">
+      <thead>
+        <th>#</th>
+        <th>Rect x</th>
+        <th>Rect y</th>
+        <th>Rect width</th>
+        <th>Rect height</th>
+        <th>Mean</th>
+        <th>Std. Dev.</th>
+        <th>Max</th>
+        <th>Min</th>
+        <th>Median</th>
+      </thead>
+      <tbody>
+        <% @probe.testspots.each_with_index do |testspot, index| %>
+          <tr id="<%= 'testspot_' + testspot.id.to_s %>">
+            <td><%= index = index + 1 %></td>
+            <td><%= testspot.rect_x%></td>
+            <td><%= testspot.rect_y%></td>
+            <td><%= testspot.rect_width%></td>
+            <td><%= testspot.rect_height%></td>
+            <td><%= testspot.mean %></td>
+            <td><%= testspot.std_dev %></td>
+            <td><%= testspot.max %></td>
+            <td><%= testspot.min %></td>
+            <td><%= testspot.median %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+

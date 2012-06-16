@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
+//= require lib/raphael
+//= require lib/underscore
+//= require lib/jquery.url
 //= require_tree .

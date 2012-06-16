@@ -1,0 +1,182 @@
+%YAML:1.0
+fAngleRotInDeg: 127.
+pairRegionRefCircle:
+   pointTL_x: 325
+   pointTL_y: 384
+   pointBR_x: 332
+   pointBR_y: 391
+pairRegionTestCircle:
+   pointTL_x: 389
+   pointTL_y: 297
+   pointBR_x: 394
+   pointBR_y: 301
+iNumRegionRefMarkers: 3
+iNumRefMarkersPerRegion0: 1
+pairRegionRefMarkers0:
+   pointTL_x: 337
+   pointTL_y: 250
+   pointBR_x: 357
+   pointBR_y: 273
+iNumRefMarkersPerRegion1: 1
+pairRegionRefMarkers1:
+   pointTL_x: 320
+   pointTL_y: 378
+   pointBR_x: 338
+   pointBR_y: 398
+iNumRefMarkersPerRegion2: 1
+pairRegionRefMarkers2:
+   pointTL_x: 354
+   pointTL_y: 378
+   pointBR_x: 373
+   pointBR_y: 399
+iNumRegionTests: 10
+pairDimOfTestsPerRegion0:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests0:
+   pointTL_x: 237
+   pointTL_y: 182
+   pointBR_x: 317
+   pointBR_y: 197
+matVecOfRectTests0: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 242., 186., 7., 7., 251., 186., 7., 7., 260., 186., 7., 7.,
+       269., 186., 7., 7., 279., 186., 7., 7., 288., 186., 7., 7., 297.,
+       186., 7., 7., 306., 186., 7., 7. ]
+pairDimOfTestsPerRegion1:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests1:
+   pointTL_x: 375
+   pointTL_y: 183
+   pointBR_x: 452
+   pointBR_y: 194
+matVecOfRectTests1: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 378., 185., 7., 7., 387., 185., 7., 7., 396., 185., 7., 7.,
+       404., 185., 7., 7., 413., 185., 7., 7., 422., 185., 7., 7., 431.,
+       185., 7., 7., 439., 185., 7., 7. ]
+pairDimOfTestsPerRegion2:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests2:
+   pointTL_x: 238
+   pointTL_y: 220
+   pointBR_x: 317
+   pointBR_y: 232
+matVecOfRectTests2: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 243., 222., 7., 7., 252., 222., 7., 7., 261., 222., 7., 7.,
+       270., 222., 7., 7., 279., 222., 7., 7., 288., 222., 7., 7., 297.,
+       222., 7., 7., 306., 222., 7., 7. ]
+pairDimOfTestsPerRegion3:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests3:
+   pointTL_x: 375
+   pointTL_y: 219
+   pointBR_x: 451
+   pointBR_y: 232
+matVecOfRectTests3: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 379., 222., 7., 7., 388., 222., 7., 7., 396., 222., 7., 7.,
+       405., 222., 7., 7., 414., 222., 7., 7., 422., 222., 7., 7., 431.,
+       222., 7., 7., 439., 222., 7., 7. ]
+pairDimOfTestsPerRegion4:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests4:
+   pointTL_x: 241
+   pointTL_y: 259
+   pointBR_x: 317
+   pointBR_y: 267
+matVecOfRectTests4: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 244., 258., 7., 7., 253., 258., 7., 7., 261., 258., 7., 7.,
+       270., 258., 7., 7., 279., 258., 7., 7., 287., 258., 7., 7., 296.,
+       258., 7., 7., 304., 258., 7., 7. ]
+pairDimOfTestsPerRegion5:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests5:
+   pointTL_x: 372
+   pointTL_y: 254
+   pointBR_x: 452
+   pointBR_y: 270
+matVecOfRectTests5: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 377., 259., 7., 7., 386., 259., 7., 7., 395., 259., 7., 7.,
+       404., 259., 7., 7., 414., 259., 7., 7., 423., 259., 7., 7., 432.,
+       259., 7., 7., 441., 259., 7., 7. ]
+pairDimOfTestsPerRegion6:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests6:
+   pointTL_x: 240
+   pointTL_y: 291
+   pointBR_x: 318
+   pointBR_y: 306
+matVecOfRectTests6: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 244., 295., 7., 7., 253., 295., 7., 7., 262., 295., 7., 7.,
+       271., 295., 7., 7., 280., 295., 7., 7., 288., 295., 7., 7., 297.,
+       295., 7., 7., 306., 295., 7., 7. ]
+pairDimOfTestsPerRegion7:
+   iNumRows: 1
+   iNumCols: 8
+pairRegionTests7:
+   pointTL_x: 374
+   pointTL_y: 292
+   pointBR_x: 454
+   pointBR_y: 306
+matVecOfRectTests7: !!opencv-matrix
+   rows: 8
+   cols: 4
+   dt: f
+   data: [ 378., 295., 7., 7., 387., 295., 7., 7., 396., 295., 7., 7.,
+       405., 295., 7., 7., 415., 295., 7., 7., 424., 295., 7., 7., 433.,
+       295., 7., 7., 442., 295., 7., 7. ]
+pairDimOfTestsPerRegion8:
+   iNumRows: 1
+   iNumCols: 9
+pairRegionTests8:
+   pointTL_x: 239
+   pointTL_y: 326
+   pointBR_x: 326
+   pointBR_y: 340
+matVecOfRectTests8: !!opencv-matrix
+   rows: 9
+   cols: 4
+   dt: f
+   data: [ 244., 330., 7., 7., 253., 330., 7., 7., 262., 330., 7., 7.,
+       270., 330., 7., 7., 279., 330., 7., 7., 288., 330., 7., 7., 297.,
+       330., 7., 7., 305., 330., 7., 7., 314., 330., 7., 7. ]
+pairDimOfTestsPerRegion9:
+   iNumRows: 1
+   iNumCols: 9
+pairRegionTests9:
+   pointTL_x: 367
+   pointTL_y: 326
+   pointBR_x: 455
+   pointBR_y: 341
+matVecOfRectTests9: !!opencv-matrix
+   rows: 9
+   cols: 4
+   dt: f
+   data: [ 369., 329., 7., 7., 378., 329., 7., 7., 387., 329., 7., 7.,
+       396., 329., 7., 7., 405., 329., 7., 7., 413., 329., 7., 7., 422.,
+       329., 7., 7., 431., 329., 7., 7., 440., 329., 7., 7. ]

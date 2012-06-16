@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="span4 offset4">
+    <h3>Choose an experiment</h3>
+    <%= form_tag("/experiments", class: "well form-search") do %>
+      <%= select_tag("experiments", options_from_collection_for_select(@experiments, "id", "name"), include_blank: true, prompt: "Choose an experiment") %>
+    <% end -%>
+    <%= link_to 'New Experiment', new_experiment_path, class: "btn" %>
+  </div>
+</div>

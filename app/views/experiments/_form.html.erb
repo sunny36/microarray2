@@ -1,0 +1,27 @@
+<div class"row">
+  <%= form_for(@experiment, html: { class: "form-horizontal"}) do |f| %>
+    <fieldset>
+      <div class="control-group">
+        <%= f.label :comment, 'Comments', class: "control-label" %>
+        <div class="controls">
+          <%= f.text_area :comments, class: "input-xlarge", rows: 4 %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= f.label :template_id, 'Template', class: "control-label" %>
+        <div class="controls">
+          <%= f.select :template_id, @templates.collect {|t| [t.image_filename, t.id]}, {include_bank: true} %>
+        </div>
+      </div>
+      <div class='control-group'>
+        <%= f.label :zip_file, 'Probe Images', class: "control-label" %>
+        <div class="controls">
+          <%= f.file_field :zip_file, class: "input-file" %>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-actions">
+      <%= f.submit 'Save', class: "btn btn-success" %>
+    </div>
+  <% end %>
+</div>
