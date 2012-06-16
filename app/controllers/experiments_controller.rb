@@ -1,4 +1,5 @@
-class ExperimentsController < ApplicationController
+class ExperimentsController < ApplicationController 
+  require 'zip/zip'
   
   def index
     @experiments = Experiment.all
@@ -23,10 +24,14 @@ class ExperimentsController < ApplicationController
 
   def create
     @experiment = Experiment.new(params[:experiment])
-    @experiment.system_input_folder  = Rails.root.join("app", "assets", "images", "input").to_s
-    @experiment.system_output_folder = Rails.root.join("app", "assets", "images", "output").to_s
+    @experiment.system_input_folder  = "../input/" 
+    @experiment.system_output_folder = "../output/"
+    @experiment.probe_folder_name = ""
+    @experiment.probe_image_wildcard = "*.tif"
     File.open(Rails.root.join("tmp", params[:experiment][:zip_file].original_filename),'wb') { |f| f.write params[:experiment][:zip_file].read }
     if @experiment.save
+      @experiment.probe_folder_name = "../input/#{@experiment.id}"
+      @experiment.save
       unzip_file(Rails.root.join("tmp", params[:experiment][:zip_file].original_filename),
                  File.join(File.expand_path(ENV["MICROARRAY_ANALYZER_PATH"]), "input", "#{@experiment.id}"))
       system ""
