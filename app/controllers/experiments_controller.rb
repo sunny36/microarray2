@@ -1,16 +1,15 @@
 class ExperimentsController < ApplicationController 
-  require 'zip/zip'
   
   def index
     @experiments = Experiment.all
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @experiments }
-    end
   end
 
   def show
     @experiment = Experiment.find(params[:id])
+    # format.json { render json: @article.as_json(only: [:id, :name, :content], include: [:author, {comments: {only:[:id, :name, :content]}}]) }
+
+		gon.template = @experiment.template.as_json(methods: [:template_control_points])
+		gon.probes = @experiment.probes
   end
 
   def new
@@ -23,18 +22,12 @@ class ExperimentsController < ApplicationController
   end
 
   def create
-    @experiment = Experiment.new(params[:experiment])
-    @experiment.system_input_folder  = "../input/" 
-    @experiment.system_output_folder = "../output/"
-    @experiment.probe_folder_name = ""
-    @experiment.probe_image_wildcard = "*.tif"
-    File.open(Rails.root.join("tmp", params[:experiment][:zip_file].original_filename),'wb') { |f| f.write params[:experiment][:zip_file].read }
+    @experiment = Experiment.new(params[:experiment])    
+		File.open(Rails.root.join("tmp", params[:experiment][:zip_file].original_filename),'wb') { |f| f.write params[:experiment][:zip_file].read }
     if @experiment.save
-      @experiment.probe_folder_name = "../input/#{@experiment.id}"
-      @experiment.save
-      unzip_file(Rails.root.join("tmp", params[:experiment][:zip_file].original_filename),
-                 File.join(File.expand_path(ENV["MICROARRAY_ANALYZER_PATH"]), "input", "#{@experiment.id}"))
-      system ""
+			Extractor.unzip_file(Rails.root.join("tmp", params[:experiment][:zip_file].original_filename),
+	                         File.join(File.expand_path(ENV["MICROARRAY_ANALYZER_PATH"]), "input", "#{@experiment.id}"))    
+			
       redirect_to @experiment, notice: 'Experiment was successfully created.'
     else
       render action: "new" 

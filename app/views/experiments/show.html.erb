@@ -3,10 +3,15 @@
   <ul class="thumbnails">
     <li class="span3">
       <a href="#template_modal" data-toggle="modal" class="thumbnail">
-        <%= image_tag("input/template1_260_180.png") %>
+        <%= image_tag(thumbnail_template_path(@experiment)) %>
       </a>
     </li>
   </ul>
+  <% if TemplateControlPoint.find_all_by_template_id(@experiment.template.id).count == 3 %>
+    <%= hidden_field_tag 'template_control_points', 'yes' %>
+  <% else %>
+    <%= hidden_field_tag 'template_control_points', 'no' %>
+  <% end %>
 </div>
 
 
@@ -14,8 +19,16 @@
   <h2>Probe Images</h2>
   <ul class="thumbnails">
     <% @experiment.probes.each do |probe| %>
-      <li class="span3">
-        <%= link_to image_tag("input/#{@experiment.id}/#{probe.thumbnail_filename}"), probe_path(probe), class: "thumbnail" %>
+      <li class="span3">                
+        <% if probe.evaluated %>
+          <%= link_to image_tag(thumbnail_probe_path(probe)), probe_path(probe), class: "thumbnail" %>        
+          <span class="label label-success">Evaluated</span>
+        <% else %>
+          <a href="#probe_<%= probe.id %>_modal" data-toggle="modal" class="thumbnail probe_thumbnail">
+            <%= image_tag(thumbnail_probe_path(probe)) %>
+          </a>
+          <span class="label label-important">Not evaluated</span>
+        <% end %>
       </li>
     <% end %>
   </ul>
@@ -28,6 +41,23 @@
     <h3>Template Image</h3>
   </div>
   <div class="modal-body">
-    <%= image_tag("input/template1.png") %>
+    <p>Click 3 points on the image to form a polygon (the oder of click in important)</p>
+    <div id="template_image"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="/template_control_points/<%= @experiment.template.id %>" class="btn" data-dismiss="modal">Clear Control Points</a>
   </div>
 </div>
+
+<% @experiment.probes.where(evaluated: false).each do |probe| %>
+  <div class="modal hide probe_modal" id="probe_<%= probe.id%>_modal">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3>Probe Image #<%= probe.id%></h3>
+    </div>
+    <div class="modal-body">
+      <p>Click 3 points on the image to form a polygon (the oder of click in important)</p>
+      <div id="probe_<%= probe.id %>_image"></div>
+    </div>
+  </div>
+<% end %>

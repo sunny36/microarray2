@@ -1,4 +1,4 @@
-json.(@probe, :id, :experiment_id, :filename, :width, :height, :comments)
+json.(@probe, :id, :experiment_id, :filename, :width, :height, :comments, :only_filename)
 
 json.testspots @probe.testspots do |json, testspot|
   json.(testspot, 

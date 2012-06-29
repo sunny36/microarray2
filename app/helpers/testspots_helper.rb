@@ -1,0 +1,2 @@
+module TestspotsHelper
+end

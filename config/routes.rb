@@ -1,6 +1,14 @@
 Microarray2::Application.routes.draw do
   resources :experiments
-  resources :probes
+  resources :probes do
+		get 'thumbnail', on: :member
+		get 'image', 		 on: :member
+	end
+	resources :templates do
+	  get 'thumbnail', on: :member
+	end
+  resources :testspots
+	resources :template_control_points
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

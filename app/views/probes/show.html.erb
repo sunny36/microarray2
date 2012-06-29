@@ -1,6 +1,6 @@
 <div class="row">
   <div class="span8">
-    <div id="<%= @probe.filename.split('.').first %>"></div>
+    <div id="<%= @probe.only_filename.split('.').first %>"></div>
   </div>
   <div class="span3">
     <table class="table">
@@ -21,7 +21,7 @@
     </table>
   </div>
 
-  <div class="span12">
+  <div class="span7">
     <table id="<%= 'probe' + @probe.id.to_s %>" class="table">
       <thead>
         <th>#</th>

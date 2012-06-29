@@ -1,5 +1,6 @@
 require 'zip/zip'
-class Zip
+
+class Extractor
   def self.unzip_file(file, destination)
     Zip::ZipFile.open(file) { |zip_file|
       zip_file.each { |f|
